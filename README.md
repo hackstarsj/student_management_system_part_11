@@ -44,3 +44,9 @@ student_management_system_in_django
 
 <h2>Session Year Manage</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/session_year.PNG"  alt="Session Year Manage">
+
+<h2>Staff Apply for Leave</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/leave_message.PNG"  alt="Staff Apply for Leave">
+
+<h2>Staff Feedback Message</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/feedback_message.PNG"  alt="Staff Feedback Message">
