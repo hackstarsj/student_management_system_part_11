@@ -50,3 +50,10 @@ student_management_system_in_django
 
 <h2>Staff Feedback Message</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/feedback_message.PNG"  alt="Staff Feedback Message">
+
+
+<h2>Password Reset Form</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/password_reset_1.PNG"  alt="Password Reset">
+
+<h2>Password Change Form</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/password_reset_2.PNG"  alt="Password Reset">
