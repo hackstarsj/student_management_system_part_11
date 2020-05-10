@@ -57,3 +57,10 @@ student_management_system_in_django
 
 <h2>Password Change Form</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/password_reset_2.PNG"  alt="Password Reset">
+
+
+<h2>Student View Attendance Form</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_view_attenndance.PNG"  alt="Student View Attendance Form">
+
+<h2>Student View Attendance Data</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/attendance_data.PNG"  alt="Student View Attendance Data">
