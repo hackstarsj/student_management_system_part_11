@@ -64,3 +64,9 @@ student_management_system_in_django
 
 <h2>Student View Attendance Data</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/attendance_data.PNG"  alt="Student View Attendance Data">
+
+<h2>Student Apply for Leave</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_leave.PNG"  alt="Student Apply for Leave">
+
+<h2>Student Send Feedback Message</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_feedback.PNG"  alt="Student Send Feedback Message">
