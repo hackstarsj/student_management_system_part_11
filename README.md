@@ -82,3 +82,9 @@ student_management_system_in_django
 
 <h2>Student Send Feedback Message</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_feedback.PNG"  alt="Student Send Feedback Message">
+
+<h2>HOD Reply Student Feedback</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/feedback_student.PNG"  alt="HOD Reply Student Feedback">
+
+<h2>HOD Reply Staff Feedback</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/feedback_staff.PNG"  alt="HOD Reply Staff Feedback">
