@@ -1,0 +1,124 @@
+{% extends 'hod_template/base_template.html' %}
+{% block page_title %}
+Staff Feedback
+{% endblock page_title %}
+{% block main_content %}
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-12">
+            <!-- general form elements -->
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Staff Feedback</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+                <div class="table">
+                    <table class="table">
+                        <tr>
+                            <th>ID</th>
+                            <th>Staff ID</th>
+                            <th>Staff Name</th>
+                            <th>Message</th>
+                            <th>Sended On</th>
+                            <th>Reply</th>
+                        </tr>
+                        {% for feedback in feedbacks %}
+                        <tr>
+                            <td>{{ feedback.id }}</td>
+                            <td>{{ feedback.staff_id.admin.id }}</td>
+                            <td>{{ feedback.staff_id.admin.first_name }} {{ feedback.staff_id.admin.last_name }}</td>
+                            <td>{{ feedback.feedback }}</td>
+                            <td>{{ feedback.created_at }}</td>
+                            <td>
+                                {% if feedback.feedback_reply == "" %}
+                                <button class="btn btn-success reply_open_modal" data-toggle="modal" data-target="#reply_modal">Reply</button>
+                                {% else %}
+                                {{ feedback.feedback_reply }}
+                                {% endif %}
+                            </td>
+
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+
+            </div>
+            <!-- /.card -->
+
+
+
+          </div>
+          </div>
+      </div>
+    </section>
+  <!-- Modal -->
+  <div class="modal fade" id="reply_modal" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Reply</h4>
+                      <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        <div class="modal-body">
+          <p>Reply To : <span id="reply_name"></span></p>
+            <input type="hidden" id="reply_id" name="reply_id">
+            <textarea class="form-control" rows="5" id="reply_message"></textarea>
+            <button id="reply_btn" class="btn btn-info btn-block">Reply</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+    <!-- /.content -->
+{% endblock main_content %}
+{% block custom_js %}
+<script>
+    $(document).ready(function(){
+        $(".reply_open_modal").click(function(){
+            var id=$(this).parents("tr").children("td:eq(0)").text();
+            var name=$(this).parents("tr").children("td:eq(2)").text();
+            $("#reply_id").val(id);
+            $("#reply_name").text(name);
+        });
+
+
+        $(document).on("click","#reply_btn",function(){
+
+                $(this).attr("disabled","disabled")
+                $(this).text("Sending Reply...")
+
+                var id=$("#reply_id").val();
+                var message=$("#reply_message").val()
+
+                $.ajax({
+                        url:'{% url 'staff_feedback_message_replied' %}',
+                        type:'POST',
+                        data:{id:id,message:message},
+                    })
+                    .done(function(response){
+
+                        if(response=="True"){
+                            alert("Reply Sent")
+                        }
+                        else{
+                            alert("Error in Sending Reply")
+                        }
+                        location.reload()
+                    })
+                    .fail(function(){
+                        alert("Error in Sending Reply")
+                    })
+           });
+
+    });
+</script>
+{% endblock custom_js %}
