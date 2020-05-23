@@ -57,9 +57,17 @@ urlpatterns = [
     path('student_feedback_message_replied', HodViews.student_feedback_message_replied,name="student_feedback_message_replied"),
     path('staff_feedback_message', HodViews.staff_feedback_message,name="staff_feedback_message"),
     path('staff_feedback_message_replied', HodViews.staff_feedback_message_replied,name="staff_feedback_message_replied"),
+    path('student_leave_view', HodViews.student_leave_view,name="student_leave_view"),
+    path('staff_leave_view', HodViews.staff_leave_view,name="staff_leave_view"),
+    path('student_approve_leave/<str:leave_id>', HodViews.student_approve_leave,name="student_approve_leave"),
+    path('student_disapprove_leave/<str:leave_id>', HodViews.student_disapprove_leave,name="student_disapprove_leave"),
+    path('staff_disapprove_leave/<str:leave_id>', HodViews.staff_disapprove_leave,name="staff_disapprove_leave"),
+    path('staff_approve_leave/<str:leave_id>', HodViews.staff_approve_leave,name="staff_approve_leave"),
+    path('admin_view_attendance', HodViews.admin_view_attendance,name="admin_view_attendance"),
+    path('admin_get_attendance_dates', HodViews.admin_get_attendance_dates,name="admin_get_attendance_dates"),
+    path('admin_get_attendance_student', HodViews.admin_get_attendance_student,name="admin_get_attendance_student"),
 
-
-#     Staff URL Path
+                  #     Staff URL Path
     path('staff_home', StaffViews.staff_home, name="staff_home"),
     path('staff_take_attendance', StaffViews.staff_take_attendance, name="staff_take_attendance"),
     path('staff_update_attendance', StaffViews.staff_update_attendance, name="staff_update_attendance"),
