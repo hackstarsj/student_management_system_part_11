@@ -88,3 +88,12 @@ student_management_system_in_django
 
 <h2>HOD Reply Staff Feedback</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/feedback_staff.PNG"  alt="HOD Reply Staff Feedback">
+
+<h2>HOD Approve and Disapprove Student Leave</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_leave_approve.PNG"  alt="HOD Approve and Disapprove Student Leave">
+
+<h2>HOD Approve and Disapprove Staff Leave</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/staff_leave_approve.PNG"  alt="HOD Approve and Disapprove Staff Leave">
+
+<h2>HOD View Attendance Data</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/admin_view_attendance.PNG"  alt="HOD View Attendance Data">
