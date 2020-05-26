@@ -167,7 +167,7 @@ CREATE TABLE `django_migrations` (
   `name` varchar(255) NOT NULL,
   `applied` datetime(6) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -176,7 +176,7 @@ CREATE TABLE `django_migrations` (
 
 LOCK TABLES `django_migrations` WRITE;
 /*!40000 ALTER TABLE `django_migrations` DISABLE KEYS */;
-INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2020-04-12 08:09:49.732772'),(2,'contenttypes','0002_remove_content_type_name','2020-04-12 08:09:49.916310'),(3,'auth','0001_initial','2020-04-12 08:09:50.001645'),(4,'auth','0002_alter_permission_name_max_length','2020-04-12 08:09:50.266520'),(5,'auth','0003_alter_user_email_max_length','2020-04-12 08:09:50.277458'),(6,'auth','0004_alter_user_username_opts','2020-04-12 08:09:50.292747'),(7,'auth','0005_alter_user_last_login_null','2020-04-12 08:09:50.300324'),(8,'auth','0006_require_contenttypes_0002','2020-04-12 08:09:50.305224'),(9,'auth','0007_alter_validators_add_error_messages','2020-04-12 08:09:50.313290'),(10,'auth','0008_alter_user_username_max_length','2020-04-12 08:09:50.322160'),(11,'auth','0009_alter_user_last_name_max_length','2020-04-12 08:09:50.333818'),(12,'auth','0010_alter_group_name_max_length','2020-04-12 08:09:50.355384'),(13,'auth','0011_update_proxy_permissions','2020-04-12 08:09:50.367427'),(14,'student_management_app','0001_initial','2020-04-12 08:09:51.816963'),(15,'admin','0001_initial','2020-04-12 08:09:54.256426'),(16,'admin','0002_logentry_remove_auto_add','2020-04-12 08:09:54.391340'),(17,'admin','0003_logentry_add_action_flag_choices','2020-04-12 08:09:54.408406'),(18,'sessions','0001_initial','2020-04-12 08:09:54.459617');
+INSERT INTO `django_migrations` VALUES (1,'contenttypes','0001_initial','2020-04-12 08:09:49.732772'),(2,'contenttypes','0002_remove_content_type_name','2020-04-12 08:09:49.916310'),(3,'auth','0001_initial','2020-04-12 08:09:50.001645'),(4,'auth','0002_alter_permission_name_max_length','2020-04-12 08:09:50.266520'),(5,'auth','0003_alter_user_email_max_length','2020-04-12 08:09:50.277458'),(6,'auth','0004_alter_user_username_opts','2020-04-12 08:09:50.292747'),(7,'auth','0005_alter_user_last_login_null','2020-04-12 08:09:50.300324'),(8,'auth','0006_require_contenttypes_0002','2020-04-12 08:09:50.305224'),(9,'auth','0007_alter_validators_add_error_messages','2020-04-12 08:09:50.313290'),(10,'auth','0008_alter_user_username_max_length','2020-04-12 08:09:50.322160'),(11,'auth','0009_alter_user_last_name_max_length','2020-04-12 08:09:50.333818'),(12,'auth','0010_alter_group_name_max_length','2020-04-12 08:09:50.355384'),(13,'auth','0011_update_proxy_permissions','2020-04-12 08:09:50.367427'),(14,'student_management_app','0001_initial','2020-04-12 08:09:51.816963'),(15,'admin','0001_initial','2020-04-12 08:09:54.256426'),(16,'admin','0002_logentry_remove_auto_add','2020-04-12 08:09:54.391340'),(17,'admin','0003_logentry_add_action_flag_choices','2020-04-12 08:09:54.408406'),(18,'sessions','0001_initial','2020-04-12 08:09:54.459617'),(19,'student_management_app','0002_auto_20200502_1839','2020-05-02 13:09:56.696264'),(20,'student_management_app','0002_auto_20200507_1430','2020-05-07 09:00:39.284817'),(21,'student_management_app','0003_auto_20200510_1919','2020-05-10 13:49:34.938810'),(22,'student_management_app','0004_auto_20200523_1321','2020-05-23 07:51:13.682476');
 /*!40000 ALTER TABLE `django_migrations` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -202,7 +202,7 @@ CREATE TABLE `django_session` (
 
 LOCK TABLES `django_session` WRITE;
 /*!40000 ALTER TABLE `django_session` DISABLE KEYS */;
-INSERT INTO `django_session` VALUES ('d6upm2xuaxeo5wodacqfzgbbt31k5apd','NzBjODJlYjZmMDJhNDE4NmQxODJkZWY3Mjc3NTg0OTFkYTY2ZTUwMzp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic3R1ZGVudF9tYW5hZ2VtZW50X2FwcC5FbWFpbEJhY2tFbmQuRW1haWxCYWNrRW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZTExNWFjOTYwNGZiYWRhY2Y1NDUzMDU1OWQ5NjE2ZmE0MmMxODM2YiJ9','2020-05-12 06:45:33.053765');
+INSERT INTO `django_session` VALUES ('4uafupyvuwgg8hsxkrbyvr6dr5flanz0','MTkxMzk4ODg5ZjE2ZmJmNzFiYzU4ZDYzYTZmNjU5NzE1ZTY1ZGFkODp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic3R1ZGVudF9tYW5hZ2VtZW50X2FwcC5FbWFpbEJhY2tFbmQuRW1haWxCYWNrRW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWI2YTk5ZjEwMzM0MDdjYmE0NmZjZGZlZDEyZGM5NzhhOTM3Y2JmMyJ9','2020-06-09 08:15:00.200912'),('z25qqlq023k6i2veud817qctrlxk63fn','MTkxMzk4ODg5ZjE2ZmJmNzFiYzU4ZDYzYTZmNjU5NzE1ZTY1ZGFkODp7Il9hdXRoX3VzZXJfaWQiOiIyIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoic3R1ZGVudF9tYW5hZ2VtZW50X2FwcC5FbWFpbEJhY2tFbmQuRW1haWxCYWNrRW5kIiwiX2F1dGhfdXNlcl9oYXNoIjoiZWI2YTk5ZjEwMzM0MDdjYmE0NmZjZGZlZDEyZGM5NzhhOTM3Y2JmMyJ9','2020-05-24 14:09:45.204277');
 /*!40000 ALTER TABLE `django_session` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -253,7 +253,7 @@ CREATE TABLE `student_management_app_attendance` (
   KEY `student_management_a_subject_id_id_9ae82fd0_fk_student_m` (`subject_id_id`),
   CONSTRAINT `student_management_a_session_year_id_id_0d30545d_fk_student_m` FOREIGN KEY (`session_year_id_id`) REFERENCES `student_management_app_sessionyearmodel` (`id`),
   CONSTRAINT `student_management_a_subject_id_id_9ae82fd0_fk_student_m` FOREIGN KEY (`subject_id_id`) REFERENCES `student_management_app_subjects` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=17 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -262,7 +262,7 @@ CREATE TABLE `student_management_app_attendance` (
 
 LOCK TABLES `student_management_app_attendance` WRITE;
 /*!40000 ALTER TABLE `student_management_app_attendance` DISABLE KEYS */;
-INSERT INTO `student_management_app_attendance` VALUES (4,'2020-04-12','2020-04-12 11:49:25.282944','2020-04-12 11:49:25.282944',1,1),(5,'2020-04-12','2020-04-12 11:49:51.034169','2020-04-12 11:49:51.034169',1,2);
+INSERT INTO `student_management_app_attendance` VALUES (4,'2020-04-12','2020-04-12 11:49:25.282944','2020-04-12 11:49:25.282944',1,1),(5,'2020-04-12','2020-04-12 11:49:51.034169','2020-04-12 11:49:51.034169',1,2),(6,'2020-05-07','2020-05-07 14:19:12.327810','2020-05-07 14:19:12.327810',1,1),(7,'2020-05-07','2020-05-07 14:19:25.800828','2020-05-07 14:19:25.800828',1,1),(8,'2020-05-07','2020-05-07 14:19:45.100649','2020-05-07 14:19:45.100649',1,1),(9,'2020-05-07','2020-05-07 14:28:08.882707','2020-05-07 14:28:08.882707',2,2),(10,'2020-05-07','2020-05-07 08:58:38.167460','2020-05-07 08:58:38.168149',2,2),(11,'2020-05-07','2020-05-07 08:59:15.875971','2020-05-07 08:59:15.875971',1,1),(12,'2020-05-07','2020-05-07 08:59:15.887974','2020-05-07 08:59:15.887974',1,1),(13,'2020-05-10','2020-05-07 09:00:59.318549','2020-05-07 09:00:59.318549',1,1),(14,'2020-05-17','2020-05-07 14:31:31.654667','2020-05-07 14:31:31.654667',1,1),(15,'2020-05-10','2020-05-07 14:39:11.790480','2020-05-07 14:39:11.790480',1,2),(16,'2020-05-15','2020-05-10 14:10:11.214771','2020-05-10 14:10:11.214771',1,1);
 /*!40000 ALTER TABLE `student_management_app_attendance` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -285,7 +285,7 @@ CREATE TABLE `student_management_app_attendancereport` (
   KEY `student_management_a_student_id_id_5a58ceea_fk_student_m` (`student_id_id`),
   CONSTRAINT `student_management_a_attendance_id_id_f765f2a1_fk_student_m` FOREIGN KEY (`attendance_id_id`) REFERENCES `student_management_app_attendance` (`id`),
   CONSTRAINT `student_management_a_student_id_id_5a58ceea_fk_student_m` FOREIGN KEY (`student_id_id`) REFERENCES `student_management_app_students` (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -294,7 +294,7 @@ CREATE TABLE `student_management_app_attendancereport` (
 
 LOCK TABLES `student_management_app_attendancereport` WRITE;
 /*!40000 ALTER TABLE `student_management_app_attendancereport` DISABLE KEYS */;
-INSERT INTO `student_management_app_attendancereport` VALUES (3,1,'2020-04-12 11:49:25.305883','2020-04-12 11:49:25.305883',4,2),(4,0,'2020-04-12 11:49:25.309871','2020-04-12 11:49:25.309871',4,3),(5,1,'2020-04-12 11:49:51.057109','2020-04-12 11:49:51.057109',5,2),(6,0,'2020-04-12 11:49:51.062096','2020-04-12 11:49:51.062096',5,3);
+INSERT INTO `student_management_app_attendancereport` VALUES (3,1,'2020-04-12 11:49:25.305883','2020-04-12 11:49:25.305883',4,2),(4,0,'2020-04-12 11:49:25.309871','2020-04-12 11:49:25.309871',4,3),(5,1,'2020-04-12 11:49:51.057109','2020-04-12 11:49:51.057109',5,2),(6,0,'2020-04-12 11:49:51.062096','2020-04-12 11:49:51.062096',5,3),(7,1,'2020-05-07 14:19:12.445501','2020-05-07 14:19:12.445501',6,2),(8,1,'2020-05-07 14:19:12.470390','2020-05-07 14:19:12.470390',6,3),(9,1,'2020-05-07 14:19:25.923632','2020-05-07 14:19:25.923632',7,2),(10,0,'2020-05-07 14:19:25.930384','2020-05-07 14:19:25.930384',7,3),(11,1,'2020-05-07 14:19:45.110865','2020-05-07 14:19:45.110865',8,2),(12,0,'2020-05-07 14:19:45.118596','2020-05-07 14:19:45.118596',8,3),(13,1,'2020-05-07 08:59:16.235068','2020-05-07 08:59:16.235068',11,2),(14,1,'2020-05-07 08:59:16.237053','2020-05-07 08:59:16.237053',12,2),(15,1,'2020-05-07 08:59:16.253009','2020-05-07 08:59:16.253009',11,3),(16,1,'2020-05-07 08:59:16.256287','2020-05-07 08:59:16.256287',12,3),(17,1,'2020-05-07 09:00:59.347431','2020-05-07 09:00:59.347431',13,2),(18,1,'2020-05-07 09:00:59.355410','2020-05-07 09:00:59.355410',13,3),(19,1,'2020-05-07 14:31:31.667624','2020-05-07 14:31:31.667624',14,2),(20,1,'2020-05-07 14:31:32.003679','2020-05-07 14:31:32.003679',14,3),(21,1,'2020-05-07 14:39:12.115953','2020-05-07 14:39:12.115953',15,2),(22,0,'2020-05-07 14:39:12.120941','2020-05-07 14:39:12.120941',15,3),(23,1,'2020-05-10 14:10:11.238705','2020-05-10 14:10:11.238705',16,2),(24,1,'2020-05-10 14:10:11.242699','2020-05-10 14:10:11.242699',16,3);
 /*!40000 ALTER TABLE `student_management_app_attendancereport` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -355,7 +355,7 @@ CREATE TABLE `student_management_app_customuser` (
 
 LOCK TABLES `student_management_app_customuser` WRITE;
 /*!40000 ALTER TABLE `student_management_app_customuser` DISABLE KEYS */;
-INSERT INTO `student_management_app_customuser` VALUES (1,'pbkdf2_sha256$150000$RUdU5YyKfaiO$n3fj1s4Xd6484HMNHu9RgXLV8tz8/HicVzRhOTYN2X8=','2020-04-18 07:10:33.103162',1,'admin','','','admin@gmail.com',1,1,'2020-04-12 08:16:06.881413','1'),(2,'pbkdf2_sha256$150000$lM9PvobQFxc9$6tb2WVQ0Me8SyAFyAjK3lKH9t6gTGjDaTvgKy52vlfg=','2020-04-28 06:45:33.020853',0,'staff1','Staff','One','staff1@gmail.com',0,1,'2020-04-12 08:38:05.596253','2'),(3,'pbkdf2_sha256$150000$npQcvrepr3MT$FnhoCm1sDCFXhHjS2u2bzngQ0cC4gq2Lmdj8fdyv0Y4=',NULL,0,'staff2','Staff','Two','staff2@gmail.com',0,1,'2020-04-12 08:38:29.881934','2'),(4,'pbkdf2_sha256$150000$pyrKxrNj7kgm$u9ngJAZyYTaBG2TYD32sO7lA70FE9+kC6RLDBVJPkbk=',NULL,0,'staff3','Staff','Three','staff3@gmail.com',0,1,'2020-04-12 08:38:51.139627','2'),(5,'pbkdf2_sha256$150000$PopAX0w5Coo0$uAM+MBkUKS2NHqUVTeHJxXz1pvMmg9HmIi72HQ0RmB8=',NULL,0,'staff4','Staff','Four','staff4@gmail.com',0,1,'2020-04-12 08:39:16.924296','2'),(13,'pbkdf2_sha256$150000$Tw6k4i4um0Uf$9zTmzdbeVzWl/gkk6QHsaHR5gOnL6JPtg/rX54dTszg=',NULL,0,'student1','Student','One','student1@gmail.com',0,1,'2020-04-12 08:59:08.372628','3'),(14,'pbkdf2_sha256$150000$qIMr0Pyx6X1a$SjfXRMpxRnjnSQautqH31YoEntAcUD8bvTnSc0wjXzI=',NULL,0,'student2','student','Two','student2@gmail.com',0,1,'2020-04-12 09:00:14.371150','3');
+INSERT INTO `student_management_app_customuser` VALUES (1,'pbkdf2_sha256$150000$qIZjsqvYXRdX$Y/mpGB8dxhsomLsD+LopE5187P3rRgtX4O0FL38nkOg=','2020-05-25 17:03:59.941387',1,'admin','Admin First 1','Admin Last 2','admin@gmail.com',1,1,'2020-04-12 08:16:06.881413','1'),(2,'pbkdf2_sha256$150000$XFNEf9gsgdpQ$bCpKMAtPdqLmV9fNq1UWPvbphlJwfO8JGxD6g6XSGSQ=','2020-05-26 08:15:00.185950',0,'staff1','Staff First 1 1','Staff One Address 3 1','staff1@gmail.com',0,1,'2020-04-12 08:38:05.596253','2'),(3,'pbkdf2_sha256$150000$jwtDH5gWfF1A$V/uIUyGazpZFk9pPb/hXWeYLd0xlNflcf6gl0fClvAo=','2020-05-07 10:20:47.673389',0,'staff2','Staff','Two','staff2@gmail.com',0,1,'2020-04-12 08:38:29.881934','2'),(4,'pbkdf2_sha256$150000$unhQRM8i4uHa$B6rUl+U1OBjN2JLCGFfDkPSXPaoipMCoN7ApBAlnDo8=',NULL,0,'staff3','Staff','Three','staff3@gmail.com',0,1,'2020-04-12 08:38:51.139627','2'),(5,'pbkdf2_sha256$150000$PopAX0w5Coo0$uAM+MBkUKS2NHqUVTeHJxXz1pvMmg9HmIi72HQ0RmB8=',NULL,0,'staff4','Staff','Four','staff4@gmail.com',0,1,'2020-04-12 08:39:16.924296','2'),(13,'pbkdf2_sha256$150000$SJds04Sc9j3o$k7sWpFqxT71JPDhqVQR3hoHKBg6W5MqMvgcfda0DdME=','2020-05-05 07:53:44.763359',0,'student1','Student','One','sksanjeev362@gmail.com',0,1,'2020-04-12 08:59:08.372628','3'),(14,'pbkdf2_sha256$150000$YvyopCJTSH99$ijgtSu+77BwcofyB73bWdWgisfgEk2AwT9oX61JADSA=','2020-05-26 08:14:12.403741',0,'student2','student First','Two Last','student2@gmail.com',0,1,'2020-04-12 09:00:14.371150','3');
 /*!40000 ALTER TABLE `student_management_app_customuser` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -432,7 +432,7 @@ CREATE TABLE `student_management_app_feedbackstaffs` (
   PRIMARY KEY (`id`),
   KEY `student_management_a_staff_id_id_6f22a616_fk_student_m` (`staff_id_id`),
   CONSTRAINT `student_management_a_staff_id_id_6f22a616_fk_student_m` FOREIGN KEY (`staff_id_id`) REFERENCES `student_management_app_staffs` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -441,6 +441,7 @@ CREATE TABLE `student_management_app_feedbackstaffs` (
 
 LOCK TABLES `student_management_app_feedbackstaffs` WRITE;
 /*!40000 ALTER TABLE `student_management_app_feedbackstaffs` DISABLE KEYS */;
+INSERT INTO `student_management_app_feedbackstaffs` VALUES (1,'Testing Feedback Message','I will Contact You','2020-05-02 13:39:42.882248','2020-05-02 13:39:42.882248',1),(2,'New Testing','Thanks','2020-05-02 13:40:58.015222','2020-05-02 13:40:58.015222',1);
 /*!40000 ALTER TABLE `student_management_app_feedbackstaffs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -461,7 +462,7 @@ CREATE TABLE `student_management_app_feedbackstudent` (
   PRIMARY KEY (`id`),
   KEY `student_management_a_student_id_id_099e23ad_fk_student_m` (`student_id_id`),
   CONSTRAINT `student_management_a_student_id_id_099e23ad_fk_student_m` FOREIGN KEY (`student_id_id`) REFERENCES `student_management_app_students` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -470,6 +471,7 @@ CREATE TABLE `student_management_app_feedbackstudent` (
 
 LOCK TABLES `student_management_app_feedbackstudent` WRITE;
 /*!40000 ALTER TABLE `student_management_app_feedbackstudent` DISABLE KEYS */;
+INSERT INTO `student_management_app_feedbackstudent` VALUES (1,'Need to Contact','Thanks for Message','2020-05-15 09:47:31.700892','2020-05-15 09:47:31.700892',3),(2,'Need to Contact','We Will Contact You','2020-05-15 09:47:31.700892','2020-05-15 09:47:31.700892',3);
 /*!40000 ALTER TABLE `student_management_app_feedbackstudent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -484,14 +486,14 @@ CREATE TABLE `student_management_app_leavereportstaff` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `leave_date` varchar(255) NOT NULL,
   `leave_message` longtext NOT NULL,
-  `leave_status` tinyint(1) NOT NULL,
+  `leave_status` int(11) NOT NULL,
   `created_at` datetime(6) NOT NULL,
   `updated_at` datetime(6) NOT NULL,
   `staff_id_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `student_management_a_staff_id_id_c7710cd5_fk_student_m` (`staff_id_id`),
   CONSTRAINT `student_management_a_staff_id_id_c7710cd5_fk_student_m` FOREIGN KEY (`staff_id_id`) REFERENCES `student_management_app_staffs` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -500,6 +502,7 @@ CREATE TABLE `student_management_app_leavereportstaff` (
 
 LOCK TABLES `student_management_app_leavereportstaff` WRITE;
 /*!40000 ALTER TABLE `student_management_app_leavereportstaff` DISABLE KEYS */;
+INSERT INTO `student_management_app_leavereportstaff` VALUES (1,'2020-05-17','Borther Marriage',1,'2020-05-02 13:20:13.981434','2020-05-02 13:20:13.981434',1),(2,'2020-05-24','Sister Marriage',2,'2020-05-02 13:21:20.513330','2020-05-02 13:21:20.513330',1),(3,'2020-05-31','Just Leave',0,'2020-05-02 13:31:45.231819','2020-05-02 13:31:45.231819',1);
 /*!40000 ALTER TABLE `student_management_app_leavereportstaff` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -514,14 +517,14 @@ CREATE TABLE `student_management_app_leavereportstudent` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `leave_date` varchar(255) NOT NULL,
   `leave_message` longtext NOT NULL,
-  `leave_status` tinyint(1) NOT NULL,
+  `leave_status` int(11) NOT NULL,
   `created_at` datetime(6) NOT NULL,
   `updated_at` datetime(6) NOT NULL,
   `student_id_id` int(11) NOT NULL,
   PRIMARY KEY (`id`),
   KEY `student_management_a_student_id_id_9ea5372c_fk_student_m` (`student_id_id`),
   CONSTRAINT `student_management_a_student_id_id_9ea5372c_fk_student_m` FOREIGN KEY (`student_id_id`) REFERENCES `student_management_app_students` (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -530,6 +533,7 @@ CREATE TABLE `student_management_app_leavereportstudent` (
 
 LOCK TABLES `student_management_app_leavereportstudent` WRITE;
 /*!40000 ALTER TABLE `student_management_app_leavereportstudent` DISABLE KEYS */;
+INSERT INTO `student_management_app_leavereportstudent` VALUES (1,'2020-05-16','Formal Leave',1,'2020-05-15 09:46:09.709208','2020-05-15 09:46:09.709208',3),(2,'2020-05-20','Leave',2,'2020-05-15 09:46:20.765721','2020-05-15 09:46:20.765721',3),(3,'2020-05-20','Leave',0,'2020-05-15 09:46:20.765721','2020-05-15 09:46:20.765721',3);
 /*!40000 ALTER TABLE `student_management_app_leavereportstudent` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -639,7 +643,7 @@ CREATE TABLE `student_management_app_staffs` (
 
 LOCK TABLES `student_management_app_staffs` WRITE;
 /*!40000 ALTER TABLE `student_management_app_staffs` DISABLE KEYS */;
-INSERT INTO `student_management_app_staffs` VALUES (1,'Staff One Address','2020-04-12 08:38:05.762808','2020-04-12 08:38:05.762808',2),(2,'Staff Two Address','2020-04-12 08:38:30.048488','2020-04-12 08:38:30.049488',3),(3,'Staff Three Address','2020-04-12 08:38:51.316112','2020-04-12 08:38:51.316112',4),(4,'Staff Four Address','2020-04-12 08:39:17.451888','2020-04-12 08:39:17.451888',5);
+INSERT INTO `student_management_app_staffs` VALUES (1,'Staff One Address 1','2020-04-12 08:38:05.762808','2020-04-12 08:38:05.762808',2),(2,'Staff Two Address','2020-04-12 08:38:30.048488','2020-04-12 08:38:30.049488',3),(3,'Staff Three Address','2020-04-12 08:38:51.316112','2020-04-12 08:38:51.316112',4),(4,'Staff Four Address','2020-04-12 08:39:17.451888','2020-04-12 08:39:17.451888',5);
 /*!40000 ALTER TABLE `student_management_app_staffs` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -676,7 +680,7 @@ CREATE TABLE `student_management_app_students` (
 
 LOCK TABLES `student_management_app_students` WRITE;
 /*!40000 ALTER TABLE `student_management_app_students` DISABLE KEYS */;
-INSERT INTO `student_management_app_students` VALUES (2,'Male','/media/python-student-10_Sa6Q7zb.png','Student One Address','2020-04-12 08:59:08.573132','2020-04-12 08:59:08.573132',13,1,1),(3,'Male','/media/python-student-10_cv5uwSU.png','Staff Two Address','2020-04-12 09:00:14.779121','2020-04-12 09:00:14.779121',14,1,1);
+INSERT INTO `student_management_app_students` VALUES (2,'Male','/media/python-student-10_Sa6Q7zb.png','Student One Address','2020-04-12 08:59:08.573132','2020-04-12 08:59:08.573132',13,1,1),(3,'Male','/media/python-student-10_cv5uwSU.png','Staff Two Address Addd','2020-04-12 09:00:14.779121','2020-04-12 09:00:14.779121',14,1,1);
 /*!40000 ALTER TABLE `student_management_app_students` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -721,4 +725,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2020-04-28 15:31:56
+-- Dump completed on 2020-05-26 13:53:06
