@@ -97,3 +97,14 @@ student_management_system_in_django
 
 <h2>HOD View Attendance Data</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/admin_view_attendance.PNG"  alt="HOD View Attendance Data">
+
+<h2>HOD Profile View and Update</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/admin_profile.PNG"  alt="HOD Profile View and Update">
+
+
+<h2>Staff Profile View and Update</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/staff_profile.PNG"  alt="Staff Profile View and Update">
+
+
+<h2>Student Profile View and Update</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_profile.PNG"  alt="Student Profile View and Update">
