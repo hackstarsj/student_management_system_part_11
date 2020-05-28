@@ -108,3 +108,6 @@ student_management_system_in_django
 
 <h2>Student Profile View and Update</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_profile.PNG"  alt="Student Profile View and Update">
+
+<h2>Student Homepage</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/student_homepage.PNG"  alt="Student Homepage">
