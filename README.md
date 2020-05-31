@@ -114,3 +114,6 @@ student_management_system_in_django
 
 <h2>Staff Homepage</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/staff_homepage.PNG"  alt="Staff Homepage">
+
+<h2>Admin Homepage</h2>
+<img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/admin_homepage.PNG"  alt="Admin Homepage">
