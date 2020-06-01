@@ -3,6 +3,8 @@ student_management_system_in_django
 
 <h2>Complete Video Tutorial : <a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH">Link</a></h2>
 
+<a href="http://studentmanagementsystem22.herokuapp.com/">Live Project Link</a>
+
 <h>Complete Video Course</h2>
 <div align="center" style="width:100%">
       <a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH">
