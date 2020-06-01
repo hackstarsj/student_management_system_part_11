@@ -500,8 +500,8 @@ def admin_profile_save(request):
             customuser=CustomUser.objects.get(id=request.user.id)
             customuser.first_name=first_name
             customuser.last_name=last_name
-            if password!=None and password!="":
-                customuser.set_password(password)
+            # if password!=None and password!="":
+            #     customuser.set_password(password)
             customuser.save()
             messages.success(request, "Successfully Updated Profile")
             return HttpResponseRedirect(reverse("admin_profile"))
