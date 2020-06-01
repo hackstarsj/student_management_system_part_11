@@ -25,7 +25,9 @@ SECRET_KEY = 'so*rai_2(lk7t(yh%de+_kp_c%*r_b9wkga%gyo5tl9_8_r!xx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["studentmanagementsystem22.herokuapp.com"]
+#HEROKU LIVE PROJECT LINK
+#ALLOWED_HOSTS = ["studentmanagementsystem22.herokuapp.com"]
+ALLOWED_HOSTS = ["*"]
 
 MEDIA_URL="/media/"
 MEDIA_ROOT=os.path.join(BASE_DIR,"media")
@@ -46,7 +48,8 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'whitenoise.middleware.WhiteNoiseMiddleware',
+    #===Enable Only Making Project Live on Heroku==
+    # 'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
@@ -83,14 +86,15 @@ WSGI_APPLICATION = 'student_management_system.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        # 'ENGINE':'django.db.backends.mysql',
-        # 'NAME':'student_management_system',
-        # 'USER':'student_management_system',
-        # 'PASSWORD':'student_management_password',
-        # 'HOST':'localhost',
-        # 'PORT':'3306'
+        #=====Enable Only Making Project Live on Heroku====
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE':'django.db.backends.mysql',
+        'NAME':'student_management_system',
+        'USER':'student_management_system',
+        'PASSWORD':'student_management_password',
+        'HOST':'localhost',
+        'PORT':'3306'
     }
 }
 
@@ -145,7 +149,9 @@ EMAIL_FILE_PATH=os.path.join(BASE_DIR,"sent_mails")
 # EMAIL_USE_TLS=True
 # DEFAULT_FROM_EMAIL="Student management System <GMAIl_EMAIL>"
 #
-STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
-import dj_database_url
-prod_db=dj_database_url.config(conn_max_age=500)
-DATABASES['default'].update(prod_db)
+
+#Enable Only Making Project Live on Heroku
+# STATICFILES_STORAGE='whitenoise.storage.CompressedManifestStaticFilesStorage'
+# import dj_database_url
+# prod_db=dj_database_url.config(conn_max_age=500)
+# DATABASES['default'].update(prod_db)
