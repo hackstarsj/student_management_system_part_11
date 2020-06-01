@@ -24,11 +24,14 @@ class AddStudentForm(forms.Form):
     #course_list=[]
 
     session_list = []
-    sessions = SessionYearModel.object.all()
+    try:
+        sessions = SessionYearModel.object.all()
 
-    for ses in sessions:
-        small_ses = (ses.id, str(ses.session_start_year)+"   TO  "+str(ses.session_end_year))
-        session_list.append(small_ses)
+        for ses in sessions:
+            small_ses = (ses.id, str(ses.session_start_year)+"   TO  "+str(ses.session_end_year))
+            session_list.append(small_ses)
+    except:
+        session_list=[]
 
     gender_choice=(
         ("Male","Male"),
