@@ -558,7 +558,7 @@ def send_staff_notification(request):
         },
         "to":token
     }
-    headers={"Content-Type":"application/json","Authorization":"key=SERVER_KEY"}
+    headers={"Content-Type":"application/json","Authorization":"key=SERVER_KEY_HERE"}
     data=requests.post(url,data=json.dumps(body),headers=headers)
     notification=NotificationStaffs(staff_id=staff,message=message)
     notification.save()
