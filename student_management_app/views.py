@@ -70,4 +70,4 @@ def showFirebaseJS(request):
          '    return self.registration.showNotification(payload.notification.title,notificationOption);' \
          '});'
 
-    return HttpResponse(data)
+    return HttpResponse(data,content_type="text/javascript")
