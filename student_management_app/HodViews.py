@@ -535,7 +535,7 @@ def send_student_notification(request):
         },
         "to":token
     }
-    headers={"Content-Type":"application/json","Authorization":"key=AAAAXQ_sIbM:APA91bFLqNp3S3PY4RR5ujSZrT64VyW-Gqc7ClDdedPm9qK2_UwveKtnzvEan5Nlybh0ZaR6gA3va2hgoz08rxCL7YlMuLMrVhAvbMJmvRlF3w5b8F7oACTPa1iB0tFZtJIU99X1rgG0"}
+    headers={"Content-Type":"application/json","Authorization":"key=SERVER_KEY_HERE"}
     data=requests.post(url,data=json.dumps(body),headers=headers)
     notification=NotificationStudent(student_id=student,message=message)
     notification.save()
