@@ -226,3 +226,14 @@ def staff_profile_save(request):
         except:
             messages.error(request, "Failed to Update Profile")
             return HttpResponseRedirect(reverse("staff_profile"))
+
+@csrf_exempt
+def staff_fcmtoken_save(request):
+    token=request.POST.get("token")
+    try:
+        staff=Staffs.objects.get(admin=request.user.id)
+        staff.fcm_token=token
+        staff.save()
+        return HttpResponse("True")
+    except:
+        return HttpResponse("False")

@@ -1,0 +1,5 @@
+git init
+heroku git:remote studentmanagementsystem22
+git add .
+git commit -m "Initial Commit"
+git push heroku master
