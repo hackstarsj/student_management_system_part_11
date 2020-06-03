@@ -61,6 +61,15 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            {% url 'student_all_notification' as student_all_notification %}
+            <a href="{{ student_all_notification }}" class="nav-link {% if request.path == student_all_notification %} active {% endif %}">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Notifications
+              </p>
+            </a>
+          </li>
 
         </ul>
       </nav>
