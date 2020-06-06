@@ -125,5 +125,5 @@ student_management_system_in_django
 <br>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/admin_homepage2.PNG"  alt="Admin Homepage">
 
-<h2>Add Result Page From Staff Panel</h2>
+<h2>Add Student Results From Staff Panel</h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/add_result2.PNG"  alt="Add Results">
