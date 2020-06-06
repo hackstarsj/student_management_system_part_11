@@ -69,6 +69,15 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            {% url 'staff_add_result' as staff_add_result %}
+            <a href="{{ staff_add_result }}" class="nav-link {% if request.path == staff_add_result %} active {% endif %}">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Add Result
+              </p>
+            </a>
+          </li>
            <li class="nav-item">
             {% url 'staff_all_notification' as staff_all_notification %}
             <a href="{{ staff_all_notification }}" class="nav-link {% if request.path == staff_all_notification %} active {% endif %}">
@@ -78,6 +87,8 @@
               </p>
             </a>
           </li>
+
+
 
         </ul>
       </nav>

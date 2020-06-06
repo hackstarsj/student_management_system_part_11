@@ -90,6 +90,8 @@ urlpatterns = [
     path('staff_profile_save', StaffViews.staff_profile_save, name="staff_profile_save"),
     path('staff_fcmtoken_save', StaffViews.staff_fcmtoken_save, name="staff_fcmtoken_save"),
     path('staff_all_notification', StaffViews.staff_all_notification, name="staff_all_notification"),
+    path('staff_add_result', StaffViews.staff_add_result, name="staff_add_result"),
+    path('save_student_result', StaffViews.save_student_result, name="save_student_result"),
 
 
     path('student_home', StudentViews.student_home, name="student_home"),

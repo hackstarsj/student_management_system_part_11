@@ -1,0 +1,116 @@
+{% extends 'staff_template/base_template.html' %}
+{% block page_title %}
+Add Results
+{% endblock page_title %}
+{% block main_content %}
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+                    <div class="row">
+              <div class="col-md-12">
+            <!-- general form elements -->
+             <form action="{% url 'save_student_result' %}" method="post">
+                 {% csrf_token %}
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Add Results</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+                <div class="card-body">
+                   <div class="form-group">
+                    <label>Subject </label>
+                    <select class="form-control" name="subject" id="subject">
+                        {% for subject in subjects %}
+                          <option value="{{ subject.id }}">{{ subject.subject_name }}</option>
+                        {% endfor %}
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Session Year</label>
+                    <select class="form-control" name="session_year" id="session_year">
+                        {% for session_year in session_years %}
+                          <option value="{{ session_year.id }}">{{ session_year.session_start_year }} TO {{ session_year.session_end_year }}</option>
+                        {% endfor %}
+                    </select>
+                  </div>
+                   <div class="form-group">
+                      {% if messages %}
+                        {% for message in messages %}
+                        {% if message.tags == 'error' %}
+                        <div class="alert alert-danger" style="margin-top:10px">{{ message }}</div>
+                        {% endif %}
+                        {% if message.tags == 'success' %}
+                        <div class="alert alert-success" style="margin-top:10px">{{ message }}</div>
+                        {% endif %}
+                        {% endfor %}
+                      {% endif %}
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="button" class="btn btn-primary btn-block" id="fetch_student">Fetch Student</button>
+                </div>
+                <div id="student_data" class="card-footer">
+
+                </div>
+            </div>
+             </form>
+            <!-- /.card -->
+
+
+
+          </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- /.content -->
+{% endblock main_content %}
+{% block custom_js %}
+<script>
+    $(document).ready(function(){
+        $("#fetch_student").click(function(){
+            var subject=$("#subject").val()
+            var session_year=$("#session_year").val()
+
+            $.ajax({
+                url:'{% url 'get_students' %}',
+                type:'POST',
+                data:{subject:subject,session_year:session_year},
+            })
+            .done(function(response){
+                var json_data=JSON.parse(response);
+                console.log(json_data)
+                var div_data="<div class='form-group'><label>Student List</label><select class='student_list form-control' name='student_list'>";
+                for(key in json_data)
+                {
+                    div_data+="<option value='"+json_data[key]['id']+"'>ID : "+json_data[key]['id']+" : "+json_data[key]['name']+"</option>";
+                }
+                div_data+="</select>";
+                div_data+="</div>";
+                div_data+="<div class='form-group'><div class='row'>"
+                div_data+="<div class='col-lg-6'>";
+                div_data+="<label> Assignment Marks : </label><input type='text' name='assignment_marks' class='form-control' placeholder='Assignment Marks'>";
+                div_data+="</div>";
+                div_data+="<div class='col-lg-6'>";
+                div_data+="<label> Exam Marks : </label><input type='text' name='exam_marks' class='form-control' placeholder='Exam Marks'>";
+                div_data+="</div>"
+                div_data+="</div></div>";
+
+                div_data+="<div class='form-group'>";
+                div_data+="<button id='save_attendance' class='btn btn-success btn-block' type='submit'>Save Result</button>";
+                div_data+="</div>";
+
+                $("#student_data").html(div_data);
+
+            })
+            .fail(function(){
+                alert("Error in Fetching Student")
+            });
+        });
+    })
+</script>
+{% endblock custom_js %}
