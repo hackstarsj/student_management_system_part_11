@@ -1,0 +1,120 @@
+{% extends 'staff_template/base_template.html' %}
+{% block page_title %}
+Edit Results
+{% endblock page_title %}
+{% block main_content %}
+    <!-- Main content -->
+    <section class="content">
+      <div class="container-fluid">
+                    <div class="row">
+              <div class="col-md-12">
+            <!-- general form elements -->
+             <form action="{% url 'edit_student_result' %}" method="post">
+                 {% csrf_token %}
+            <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title">Edit Results</h3>
+              </div>
+              <!-- /.card-header -->
+              <!-- form start -->
+                <div class="card-body">
+                    {{ form }}
+                   <div class="form-group">
+                      {% if messages %}
+                        {% for message in messages %}
+                        {% if message.tags == 'error' %}
+                        <div class="alert alert-danger" style="margin-top:10px">{{ message }}</div>
+                        {% endif %}
+                        {% if message.tags == 'success' %}
+                        <div class="alert alert-success" style="margin-top:10px">{{ message }}</div>
+                        {% endif %}
+                        {% endfor %}
+                      {% endif %}
+                    </div>
+
+                </div>
+                <!-- /.card-body -->
+
+                <div class="card-footer">
+                  <button type="submit" class="btn btn-primary btn-block" id="fetch_student">Update Result</button>
+                </div>
+            </div>
+             </form>
+            <!-- /.card -->
+
+
+
+          </div>
+          </div>
+
+      </div>
+    </section>
+    <!-- /.content -->
+{% endblock main_content %}
+{% block custom_js %}
+<script>
+    $(document).ready(function(){
+        $("#id_session_ids").change(function(){
+            fetchStudents();
+        });
+        $("#id_subject_id").change(function(){
+            fetchStudents();
+        });
+
+        $("#id_student_ids").change(function(){
+            fetch_result_student();
+        })
+
+        function fetchStudents(){
+            var session_year=$("#id_session_ids").val()
+            var subject=$("#id_subject_id").val()
+
+            $.ajax({
+                url:'{% url 'get_students' %}',
+                type:'POST',
+                data:{subject:subject,session_year:session_year},
+            })
+            .done(function(response){
+                var json_data=JSON.parse(response);
+                console.log(json_data)
+                var div_data="";
+                for(key in json_data)
+                {
+                    div_data+="<option value='"+json_data[key]['id']+"'>ID : "+json_data[key]['id']+" : "+json_data[key]['name']+"</option>";
+                }
+
+                $("#id_student_ids").html(div_data);
+
+            })
+            .fail(function(){
+                alert("Error in Fetching Student")
+            });
+        }
+
+        function fetch_result_student(){
+            var id_student_ids=$("#id_student_ids").val()
+            var subject=$("#id_subject_id").val()
+
+            $.ajax({
+                url:'{% url 'fetch_result_student' %}',
+                type:'POST',
+                data:{subject_id:subject,student_id:id_student_ids},
+            })
+            .done(function(response){
+                if(response=="False"){
+                    alert("Result Not Found")
+                }
+                else{
+                    var json_data=JSON.parse(response);
+                    $("#id_assignment_marks").val(json_data['assign_marks'])
+                    $("#id_exam_marks").val(json_data['exam_marks'])
+                }
+
+            })
+            .fail(function(){
+                alert("Error in Fetching Student")
+            });
+        }
+    })
+</script>
+{% endblock custom_js %}

@@ -16,8 +16,11 @@ Including another URLconf
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
+from django.views.decorators.csrf import csrf_exempt
+from django.views.generic import TemplateView
 
 from student_management_app import views, HodViews, StaffViews, StudentViews
+from student_management_app.EditResultVIewClass import EditResultViewClass
 from student_management_system import settings
 
 urlpatterns = [
@@ -92,6 +95,8 @@ urlpatterns = [
     path('staff_all_notification', StaffViews.staff_all_notification, name="staff_all_notification"),
     path('staff_add_result', StaffViews.staff_add_result, name="staff_add_result"),
     path('save_student_result', StaffViews.save_student_result, name="save_student_result"),
+    path('edit_student_result',EditResultViewClass.as_view(), name="edit_student_result"),
+    path('fetch_result_student',StaffViews.fetch_result_student, name="fetch_result_student"),
 
 
     path('student_home', StudentViews.student_home, name="student_home"),
@@ -105,5 +110,5 @@ urlpatterns = [
     path('student_profile_save', StudentViews.student_profile_save, name="student_profile_save"),
     path('student_fcmtoken_save', StudentViews.student_fcmtoken_save, name="student_fcmtoken_save"),
     path('firebase-messaging-sw.js',views.showFirebaseJS,name="show_firebase_js"),
-    path('student_all_notification',StudentViews.student_all_notification,name="student_all_notification")
+    path('student_all_notification',StudentViews.student_all_notification,name="student_all_notification"),
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
