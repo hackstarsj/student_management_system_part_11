@@ -17,8 +17,9 @@ Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3
 <h2>Installation Steps : </h2>
 <p>Project Dependency :</p>
 <ul>
+<li>
 pip install requests
-</ul>
+</li>
 <li>
 pip install Django
 </li>
