@@ -15,7 +15,16 @@ Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3
 <br>
 
 <h2>Installation Steps : </h2>
-<p>Python Dependency : requests,django,mysql client,</p>
+<p>Project Dependency :</p>
+<ul>
+pip install requests
+</ul>
+<li>
+pip install Django
+</li>
+<li>
+pip install mysql-client
+</li>
 <ul>
 <ol>First Create MySql Database Tutorial : <a href="https://youtu.be/cEazlDKu86E">https://youtu.be/cEazlDKu86E</a> </ol>
 <ol>Change Database Setting in settings.py </ol>
