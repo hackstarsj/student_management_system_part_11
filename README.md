@@ -26,6 +26,10 @@ pip install Django
 <li>
 pip install mysql-client
 </li>
+</ul>
+<br>
+<br>
+<hr>
 <ul>
 <ol>First Create MySql Database Tutorial : <a href="https://youtu.be/cEazlDKu86E">https://youtu.be/cEazlDKu86E</a> </ol>
 <ol>Change Database Setting in settings.py </ol>
