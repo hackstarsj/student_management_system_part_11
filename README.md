@@ -8,7 +8,30 @@ student_management_system_in_django
 <b>admin@gmail.com</b>
 <b>admin</b>
 
-<h>Complete Video Course</h2>
+<h2> How to Deploy on Heroku </h2> 
+Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3uGo</a>
+
+<br>
+<br>
+
+<h2>Installation Steps : </h2>
+<p>Python Dependency : requests,django,mysql client,</p>
+<ul>
+<ol>First Create MySql Database Tutorial : <a href="https://youtu.be/cEazlDKu86E">https://youtu.be/cEazlDKu86E</a> </ol>
+<ol>Change Database Setting in settings.py </ol>
+<ol>
+Run Migration Command 
+<ul>
+<li>python manage.py makemigrations</li>
+<li>python manage.py migrate</li>
+</ul>
+</ol>
+<ol>
+Run Project python runserver
+</ol>
+</ul>
+
+<h2>Complete Video Course</h2>
 <div align="center" style="width:100%">
       <a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH">
      <img 
