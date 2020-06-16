@@ -15,7 +15,7 @@ Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3
 <br>
 <hr>
 <h2>Donate</h2>
-<p>Paypal : <a href="https://www.paypal.me/hackstarsj"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/paypal_donate.png"/></a> </p>
+<p>Paypal : <a href="https://www.paypal.me/hackstarsj"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/paypal_donate.jpg"/></a> </p>
 <p>Paytm 50 : <a href="https://paytm.me/4gDP-w8"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
 <p>Paytm 100 : <a href="https://paytm.me/yW-dMxJ"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
 <p>Paytm 200 : <a href="https://paytm.me/qgEP-w8"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
