@@ -54,6 +54,9 @@ Run Migration Command
 <ul>
 <li>python manage.py makemigrations</li>
 <li>python manage.py migrate</li>
+<li>In login_page.html Replace <pre>CAPTCHA_CLIENT_KEY</pre> with Captcha Client Side Key</li>
+<li>In views.py Replace <pre>CAPTCHA_SERVER_KEY</pre> with Captcha SERVER Side Key</li>
+<li>For Captcha Key Visit <a href="https://www.google.com/recaptcha/intro/v3.html">https://www.google.com/recaptcha/intro/v3.html</a></li>
 </ul>
 </ol>
 <ol>
