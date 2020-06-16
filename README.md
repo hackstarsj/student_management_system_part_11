@@ -15,10 +15,22 @@ Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3
 <br>
 <hr>
 <h2>Donate</h2>
-<p>Paypal : <a href="https://www.paypal.me/hackstarsj"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/paypal_donate.jpg"/></a> </p>
-<p>Paytm 50 : <a href="https://paytm.me/4gDP-w8"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
-<p>Paytm 100 : <a href="https://paytm.me/yW-dMxJ"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
-<p>Paytm 200 : <a href="https://paytm.me/qgEP-w8"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
+<table>
+<tr>
+<td style="width:25%">
+<p><b>Paypal : </b><a href="https://www.paypal.me/hackstarsj"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/paypal_donate.jpg"/></a> </p>
+</td>
+<td style="width:25%">
+<p><b>Paytm 50 : </b><a href="https://paytm.me/4gDP-w8"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
+</td>
+<td style="width:25%">
+<p><b>Paytm 100 : </b><a href="https://paytm.me/yW-dMxJ"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
+</td>
+<td style="width:25%">
+<p><b>Paytm 200 : </b><a href="https://paytm.me/qgEP-w8"><img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/donate-paytm.png"/></a> </p>
+</td>
+</tr>
+</table>
 <hr>
 <h2>Installation Steps : </h2>
 <p>Project Dependency :</p>
