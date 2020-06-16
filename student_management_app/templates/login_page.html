@@ -29,7 +29,7 @@
     <div class="card-body login-card-body">
       <p class="login-box-msg">Sign in to Student Management System</p>
 
-      <form action="/doLogin" method="post">
+      <form action="/doLogin" method="post" id="demo-form">
           {% csrf_token %}
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email" name="email">
@@ -47,10 +47,13 @@
             </div>
           </div>
         </div>
+        <div class="input-group mb-3">
+                <div class="g-recaptcha" data-sitekey="6LcCX6UZAAAAAHmRa__GjlM9pa63YZL4dwL2FtY0"></div>
+        </div>
         <div class="row">
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block" >Sign In</button>
           </div><!-- /.col -->
            <div class="col-12 text-center">
              <a href="{% url 'password_reset' %}">Reset Password</a>
@@ -83,6 +86,7 @@
 <script src="{% static "plugins/bootstrap/js/bootstrap.bundle.min.js" %}"></script>
 <!-- AdminLTE App -->
 <script src="{% static "dist/js/adminlte.min.js" %}"></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 </body>
 </html>
