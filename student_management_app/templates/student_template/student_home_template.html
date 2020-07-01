@@ -6,7 +6,17 @@ Home
     <!-- Main content -->
     <section class="content">
       <div class="container-fluid">
+            {% if class_room.count > 0 %}
+                    <div class="row">
+                        <div class="col-lg-12 form-group" >
+                            {% for class_single in class_room %}
+                                <a href="/join_class_room/{{ class_single.subject.id }}/{{ class_single.session_years.id }}" class="btn btn-success">JOIN LIVE CLASS of {{ class_single.subject.subject_name }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+              {% endif %}
           <div class="row">
+
           <div class="col-lg-3 col-6">
             <!-- small box -->
             <div class="small-box bg-info">

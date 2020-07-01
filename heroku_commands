@@ -3,3 +3,5 @@ heroku git:remote studentmanagementsystem22
 git add .
 git commit -m "Initial Commit"
 git push heroku master
+heroku run python manage.py makemigrations
+heroku run python manage.py migrate
