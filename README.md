@@ -63,7 +63,9 @@ Run Migration Command
 Run Project python runserver
 </ol>
 </ul>
-
+<hr>
+<b>For Video Confrencing Using This Library Complete Demo Project : <a href="https://www.rtcmulticonnection.org/">https://www.rtcmulticonnection.org/</a></b>
+<hr>
 <h2>Complete Video Course</h2>
 <div align="center" style="width:100%">
       <a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH">
@@ -77,6 +79,9 @@ Run Project python runserver
 <h2>Database Design</h2>
 
 <img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/database.png" alt="Database Design">
+
+<h2>Video Confrencing Class Room</h2>
+<img src="https://github.com/hackstarsj/student_management_system_part_11/blob/master/screenshots/video_class.jpg" alt="Add Course">
 
 
 <h2>Add Course Page</h2>
