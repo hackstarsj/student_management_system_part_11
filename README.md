@@ -5,8 +5,10 @@ student_management_system_in_django
 
 <a href="http://studentmanagementsystem22.herokuapp.com/">Live Project Link</a>
 <h4>Login</h4>
-<b>admin@gmail.com</b>
-<b>admin</b>
+<pre>
+admin@gmail.com
+admin
+</pre>
 
 <h2> How to Deploy on Heroku </h2> 
 Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3uGo</a>
@@ -33,27 +35,24 @@ Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3
 </table>
 <hr>
 <h2>Installation Steps : </h2>
+
 <p>Project Dependency :</p>
-<ul>
-<li>
+<pre>
 pip install requests
-</li>
-<li>
 pip install Django
-</li>
-<li>
 pip install mysql-client
-</li>
-</ul>
+</pre>
 <hr>
 <ul>
 <ol>First Create MySql Database Tutorial : <a href="https://youtu.be/cEazlDKu86E">https://youtu.be/cEazlDKu86E</a> </ol>
 <ol>Change Database Setting in settings.py </ol>
 <ol>
 Run Migration Command 
-<ul>
-<li>python manage.py makemigrations</li>
-<li>python manage.py migrate</li>
+<pre>
+python manage.py makemigrations
+python manage.py migrate
+</pre>
+ <ul>     
 <li>In login_page.html Replace <pre>CAPTCHA_CLIENT_KEY</pre> with Captcha Client Side Key</li>
 <li>In views.py Replace <pre>CAPTCHA_SERVER_KEY</pre> with Captcha SERVER Side Key</li>
 <li>For Captcha Key Visit <a href="https://www.google.com/recaptcha/intro/v3.html">https://www.google.com/recaptcha/intro/v3.html</a></li>
