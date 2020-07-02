@@ -1,6 +1,8 @@
 # student_management_system_in_django
 student_management_system_in_django
 
+[![Open Source Love](https://badges.frapsoft.com/os/mit/mit.svg?v=102)](https://github.com/hackstarsj/student_management_system_part_11/raw/master/LICENSE)
+
 <h2>Complete Video Tutorial : <a href="https://www.youtube.com/playlist?list=PLb-NlfexLTk_tUlAPj05s2zc8JgHTVkpH">Link</a></h2>
 
 <a href="http://studentmanagementsystem22.herokuapp.com/">Live Project Link</a>
