@@ -104,7 +104,8 @@ def add_course_save(request):
             course_model.save()
             messages.success(request,"Successfully Added Course")
             return HttpResponseRedirect(reverse("add_course"))
-        except:
+        except Exception as e:
+            print(e)
             messages.error(request,"Failed To Add Course")
             return HttpResponseRedirect(reverse("add_course"))
 
@@ -341,6 +342,7 @@ def edit_course_save(request):
 
         try:
             course=Courses.objects.get(id=course_id)
+            print(Courses.course_name)
             course.course_name=course_name
             course.save()
             messages.success(request,"Successfully Edited Course")

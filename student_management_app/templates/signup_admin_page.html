@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Student Management System | Log in</title>
+  <title>Student Management System | Signup Admin</title>
   <!-- Tell the browser to be responsive to screen width -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -27,12 +27,20 @@
   <!-- /.login-logo -->
   <div class="card">
     <div class="card-body login-card-body">
-      <p class="login-box-msg">Sign in to Student Management System</p>
+      <p class="login-box-msg">Sign Up Admin to Student Management System</p>
 
-      <form action="/doLogin" method="post" id="demo-form">
+      <form action="/do_admin_signup" method="post" id="demo-form">
       {% csrf_token %}
         <div class="input-group mb-3">
           <input type="email" class="form-control" placeholder="Email" name="email">
+          <div class="input-group-append">
+            <div class="input-group-text">
+              <span class="fas fa-envelope"></span>
+            </div>
+          </div>
+        </div>
+              <div class="input-group mb-3">
+          <input type="text" class="form-control" placeholder="Username" name="username">
           <div class="input-group-append">
             <div class="input-group-text">
               <span class="fas fa-envelope"></span>
@@ -47,26 +55,13 @@
             </div>
           </div>
         </div>
-        <div class="input-group mb-3">
-                <div class="g-recaptcha" data-sitekey="6LeWtqUZAAAAAMO6YmxX5_XWel9hLWrb_iEiff26"></div>
-        </div>
+
         <div class="row">
           <!-- /.col -->
           <div class="col-12">
-            <button type="submit" class="btn btn-primary btn-block" >Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block" >Signup Admin</button>
           </div><!-- /.col -->
-           <div class="col-12 text-center">
-             <a href="{% url 'password_reset' %}">Reset Password</a>
-          </div><!-- /.col -->
-            <div class="col-12 text-center">
-             <a href="{% url 'signup_admin' %}">Admin Signup FOR TESTING</a>
-          </div><!-- /.col -->
-                        <div class="col-12 text-center">
-             <a href="{% url 'signup_staff' %}">Staff Signup FOR TESTING</a>
-          </div><!-- /.col -->
-                                    <div class="col-12 text-center">
-             <a href="{% url 'signup_student' %}">Student Signup FOR TESTING</a>
-          </div><!-- /.col -->
+
         </div>
         <div class="row">
           {% if messages %}
@@ -74,9 +69,6 @@
             {% for message in messages %}
             {% if message.tags == 'error' %}
             <div class="alert alert-danger" style="margin-top:10px">{{ message }}</div>
-            {% endif %}
-            {% if message.tags == 'success' %}
-            <div class="alert alert-success" style="margin-top:10px">{{ message }}</div>
             {% endif %}
             {% endfor %}
           </div>

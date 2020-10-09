@@ -25,6 +25,12 @@ from student_management_system import settings
 
 urlpatterns = [
     path('demo',views.showDemoPage),
+    path('signup_admin',views.signup_admin,name="signup_admin"),
+    path('signup_student',views.signup_student,name="signup_student"),
+    path('signup_staff',views.signup_staff,name="signup_staff"),
+    path('do_admin_signup',views.do_admin_signup,name="do_admin_signup"),
+    path('do_staff_signup',views.do_staff_signup,name="do_staff_signup"),
+    path('do_signup_student',views.do_signup_student,name="do_signup_student"),
     path('admin/', admin.site.urls),
     path('accounts/',include('django.contrib.auth.urls')),
     path('',views.ShowLoginPage,name="show_login"),
@@ -34,7 +40,7 @@ urlpatterns = [
     path('admin_home',HodViews.admin_home,name="admin_home"),
     path('add_staff',HodViews.add_staff,name="add_staff"),
     path('add_staff_save',HodViews.add_staff_save,name="add_staff_save"),
-    path('add_course', HodViews.add_course,name="add_course"),
+    path('add_course/', HodViews.add_course,name="add_course"),
     path('add_course_save', HodViews.add_course_save,name="add_course_save"),
     path('add_student', HodViews.add_student,name="add_student"),
     path('add_student_save', HodViews.add_student_save,name="add_student_save"),
@@ -116,4 +122,5 @@ urlpatterns = [
     path('student_view_result',StudentViews.student_view_result,name="student_view_result"),
     path('join_class_room/<int:subject_id>/<int:session_year_id>',StudentViews.join_class_room,name="join_class_room"),
     path('node_modules/canvas-designer/widget.html',StaffViews.returnHtmlWidget,name="returnHtmlWidget"),
+    path('testurl/',views.Testurl)
 ]+static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT)+static(settings.STATIC_URL,document_root=settings.STATIC_ROOT)
