@@ -46,6 +46,7 @@ Tutorial Link : <a href="https://youtu.be/n4ly0_S3uGo">https://youtu.be/n4ly0_S3
 pip install requests
 pip install Django
 pip install mysql-client
+pip install mysqlclient
 </pre>
 <hr>
 <ul>
