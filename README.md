@@ -11,8 +11,8 @@ student_management_system_in_django
 <a href="http://studentmanagementsystem22.herokuapp.com/">Live Project Link</a>
 <h4>Login</h4>
 <pre>
-admin@gmail.com
-admin
+admin2@gmail.com
+admin2
 </pre>
 
 <h2> How to Deploy on Heroku </h2> 
