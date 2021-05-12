@@ -193,5 +193,5 @@ Run Project python runserver
 <hr>
 <hr>
 <h1>Extending Project Parts</h1>
-<h2>Add Student Results From Staff Panel</h2>
+<h2>Add Student Results From Staff Panel </h2>
 <img src="https://raw.githubusercontent.com/hackstarsj/student_management_system_part_11/master/screenshots/add_result2.PNG"  alt="Add Results">
