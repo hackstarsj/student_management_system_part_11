@@ -91,6 +91,8 @@ def Testurl(request):
     return HttpResponse("Ok")
 
 def signup_admin(request):
+    if not (request.user.is_authenticated and request.user.user_type == "1"):
+        return HttpResponseRedirect(reverse("show_login"))
     return render(request,"signup_admin_page.html")
 
 def signup_student(request):
@@ -102,6 +104,8 @@ def signup_staff(request):
     return render(request,"signup_staff_page.html")
 
 def do_admin_signup(request):
+    if not (request.user.is_authenticated and request.user.user_type == "1"):
+        return HttpResponseRedirect(reverse("show_login"))
     username=request.POST.get("username")
     email=request.POST.get("email")
     password=request.POST.get("password")
